@@ -39,6 +39,14 @@
             <p>Settings</p>
           </a>
         </li>
+        <li class="nav-item">
+          <a th:href="@{/reports}"
+             class="nav-link"
+             th:classappend="${activePage} == 'reports' ? ' active' : ''">
+            <i class="nav-icon fas fa-chart-bar"></i>
+            <p>Reports</p>
+          </a>
+        </li>
       </ul>
     </nav>
   </div>

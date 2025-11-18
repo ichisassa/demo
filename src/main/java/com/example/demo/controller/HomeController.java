@@ -22,6 +22,11 @@ public class HomeController {
     return render(model, "Settings", "settings", "settings");
   }
 
+  @GetMapping("/reports")
+  public String reports(Model model) {
+    return render(model, "Reports", "reports", "reports");
+  }
+
   private String render(Model model, String pageTitle, String contentTemplate, String activePage) {
     model.addAttribute("pageTitle", pageTitle);
     model.addAttribute("contentTemplate", "contents/" + contentTemplate);
